@@ -1,1 +1,519 @@
-happy
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li class="brand">The brand</li>
+                <div class="li-list">
+                    <li><a href=""> Home</a></li>
+                    <li><a href=""> About</a></li>
+                    <li><a href="#skills"> Skills</a></li>
+                    <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#footer"> Contact</a></li>
+                </div>
+                <span id="burguer" class="material-symbols-outlined burguer">
+                    menu
+                </span>
+                <div id="li-list-burger" class="li-list-burger collapsed">
+                    <li><a href=""> Home</a></li>
+                    <li><a href=""> About</a></li>
+                    <li><a href="#skills"> Skills</a></li>
+                    <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#footer"> Contact</a></li>
+                </div>
+                <li class="boton"></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h3>
+                Hi, I Am <a href="https://www.linkedin.com/in/bryan-p%C3%A9rez-4190aa118/">
+                    Bryan Perez
+                    <img id="hand" src="./assets/images/waving-hand.png" alt="">
+                </a>
+            </h3>
+            <h1>
+                Fullstack Developer
+            </h1>
+            <!-- <p style="padding: 25px 0;">
+
+                I build web apps.
+            </p> -->
+            <img sizes="15px" src="./assets/images/my-photo.jpg" alt="Avatar">
+        </div>
+        <div style="text-align: center;" class="social-media-links">
+            <!-- <div class="card-contenedor">
+                <div class="card">
+                    <div class="icon-contenedor">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <div>
+                        <h3>1+</h3>
+                        <span> Years Of Experience</span>
+                    </div>
+                    <i class="bi bi-caret-right"></i>
+                </div>
+                <div class="card">
+                    <div class="icon-contenedor">
+                        <i class="bi bi-check-circle"></i>
+                    </div>
+                    <div>
+                        <h3> 4+</h3>
+                        <span> Completed Projects</span>
+                    </div>
+                    <i class="bi bi-caret-right"></i>
+                </div>
+                <div class="card">
+                    <div class="icon-contenedor">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <div>
+                        <h3> 2+</h3>
+                        <span> Happy Clients</span>
+                    </div>
+                    <i class="bi bi-caret-right"></i>
+                </div>
+            </div> -->
+            <a href="https://www.linkedin.com/in/bryan-p%C3%A9rez-4190aa118/" target="_blank"><img
+                    src="./assets/images/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/bryan-p%C3%A9rez-4190aa118/" target="_blank"><img
+                    src="./assets/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/bryan-p%C3%A9rez-4190aa118/" target="_blank"><img
+                    src="./assets/images/medium.png" alt="Medium"></a>
+        </div>
+    </header>
+
+    <section id="portfolio">
+
+        <h1 style="text-align: center; padding-top:5em">Portfolio</h1>
+
+        <!-- The Modal -->
+        <div id="myModal" #myModal class="modal">
+            <span class="close">X</span>
+            <img class="modal-content" id="modalContent" #modalContent>
+            <div id="caption" #caption></div>
+        </div>
+
+
+
+        <div class="portfolio-container">
+            <div class="portfolio-container__item">
+                <!-- <img class="portfolio-container__image" src="./assets/images/bolsa-emploe.png"
+                        alt="bolsa-empleo"> -->
+                <p class="title">Job Board</p>
+                <div class="description">
+                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
+                    <span style="font-size: large;">Full-stack Developer</span>
+                    <hr style="margin: 0 0 16px 0;">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/png-clipart-laravel-software-framework-php-web-application-redes-sociais-angle-text.png"
+                            alt="">
+                        <img class="portfolio-container__image end" src="./assets/images/postgre.png" alt="">
+                    </div>
+
+                    <!-- <br>
+                        <br> -->
+
+                    <span class="company">Amauta Tech</span>
+                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
+                    <br>
+                    <span style="margin-right: 20px">Links</span>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-backend"><img
+                            class="portfolio-container__image end " src="./assets/images/github.png"
+                            alt="Go to the repository"></a>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-frontend"><img
+                            class="portfolio-container__image end " src="./assets/images/github.png"
+                            alt="Go to the repository"></a>
+                    <a target="_blank" href="https://bolsa-empleo.yavirac.edu.ec/#/authentication/login"> <img
+                            class="portfolio-container__image  end" src="./assets/images/navegador.png"
+                            alt="Go to the page"></a>
+                    <p style="margin-top: 10px;margin-bottom: 10px;">Tasks</p>
+                    <p>
+                    <p>Develop a web app to register students’ jobs and more data related to their experience,
+                        company, skills.
+                        Build front-end and back-end.
+                        Apply CRUD into web app.
+
+                    </p>
+                </div>
+                <!-- <button class="gitHubButton"><i class="gitHubButton-icon">icon</i> GitHub</button> -->
+                <!-- <button class="productionButton"><i class="productionButton-icon">icon</i> Production</button> -->
+            </div>
+            <div class="portfolio-container__item">
+                <!-- <img class="portfolio-container__image" src="./assets/images/bolsa-emploe.png"
+                        alt="bolsa-empleo"> -->
+                <p class="title">Glycemias App</p>
+                <div class="description">
+                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
+                    <span style="font-size: large;">App Developer</span>
+                    <hr style="margin: 0 0 16px 0;">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end" src="./assets/images/1200px-React.svg.png" alt="">
+
+                    </div>
+
+                    <!-- <br>
+                        <br> -->
+
+                    <span class="company">Juvenile Diabetes Foundation</span>
+                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
+                    <br>
+                    <span style="margin-right: 20px">Links</span>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/glucemias-reactnative"><img
+                            class="portfolio-container__image end " src="./assets/images/github.png"
+                            alt="Go to the repository"></a>
+                    <!-- <img class="portfolio-container__image  end" src="./assets/images/navegador.png"
+                        alt="Go to the page"> -->
+                    <p style="margin-top: 10px;margin-bottom: 10px;">Tasks</p>
+                    <p>Develop a mobile app in React Native that allows children and young people with diabetes to
+                        register their blood glucose levels and other information. Build mobili app
+
+                    </p>
+                </div>
+                <!-- <button class="gitHubButton"><i class="gitHubButton-icon">icon</i> GitHub</button> -->
+                <!-- <button class="productionButton"><i class="productionButton-icon">icon</i> Production</button> -->
+            </div>
+            <div class="portfolio-container__item">
+                <!-- <img class="portfolio-container__image" src="./assets/images/bolsa-emploe.png"
+                        alt="bolsa-empleo"> -->
+                <p class="title">Bank Services</p>
+                <div class="description">
+                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
+                    <span style="font-size: large;">Full-stack Developer</span>
+                    <hr style="margin: 0 0 16px 0;">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/png-transparent-node-js-javascript-react-express-js-linux-foundation-mongodb-icons-angle-text-rectangle.png"
+                            alt="">
+                        <img class="portfolio-container__image end" src="./assets/images/postgre.png" alt="">
+                    </div>
+
+                    <!-- <br>
+                        <br> -->
+
+                    <!-- <span class="company">Amauta Tech</span> -->
+                    <!-- <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
+                    <br> -->
+                    <span style="margin-right: 20px">Links</span>
+                    <a href="https://github.com/bryanPEREZ1497/banca"> <img class="portfolio-container__image end "
+                            src="./assets/images/github.png" alt="Go to the repository"></a>
+                    <a href="https://github.com/bryanPEREZ1497/api-banca"> <img class="portfolio-container__image end "
+                            src="./assets/images/github.png" alt="Go to the repository"></a>
+                    <!-- <img class="portfolio-container__image  end" src="./assets/images/navegador.png"
+                        alt="Go to the page"> -->
+                    <p style="margin-top: 10px;margin-bottom: 10px;">Tasks</p>
+                    <p> Develop a web page that simulates payments and bank transfers.
+                        Design the database and implemented it with PostgreSQL library.
+                        Build user interface.
+                        Build back-end.
+                    </p>
+                </div>
+                <!-- <button class="gitHubButton"><i class="gitHubButton-icon">icon</i> GitHub</button> -->
+                <!-- <button class="productionButton"><i class="productionButton-icon">icon</i> Production</button> -->
+            </div>
+            <div class="portfolio-container__item">
+                <!-- <img class="portfolio-container__image" src="./assets/images/bolsa-emploe.png"
+                        alt="bolsa-empleo"> -->
+                <p class="title">Solar tracker
+                </p>
+                <div class="description">
+                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
+                    <span style="font-size: large;">Full-stack Developer</span>
+                    <hr style="margin: 0 0 16px 0;">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/png-transparent-node-js-javascript-react-express-js-linux-foundation-mongodb-icons-angle-text-rectangle.png"
+                            alt="">
+                    </div>
+
+                    <!-- <br>
+                        <br> -->
+
+                    <!-- <span class="company">Amauta Tech</span> -->
+                    <!-- <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company"> -->
+                    <br>
+                    <span style="margin-right: 20px">Links</span>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/solarTracker-frontend"><img
+                            class="portfolio-container__image end " src="./assets/images/github.png"
+                            alt="Go to the repository"></a>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/solarTracker-backend"><img
+                            class="portfolio-container__image end " src="./assets/images/github.png"
+                            alt="Go to the repository"></a>
+                    <!-- <img class="portfolio-container__image  end" src="./assets/images/navegador.png"
+                        alt="Go to the page"> -->
+                    <p style="margin-top: 10px;margin-bottom: 10px;">Tasks</p>
+                    <p>Develop the software that manages a solar tracker using Nodejs and the Johnny-Five library.
+                        Data real-time-emitted from the solar tracker to the Angular front-end. Build user interface.
+                        Build the solar tracker with Arduino UNO
+                    </p>
+                </div>
+                <!-- <button class="gitHubButton"><i class="gitHubButton-icon">icon</i> GitHub</button> -->
+                <!-- <button class="productionButton"><i class="productionButton-icon">icon</i> Production</button> -->
+            </div>
+            <div class="portfolio-container__item">
+                <!-- <img class="portfolio-container__image" src="./assets/images/bolsa-emploe.png"
+                        alt="bolsa-empleo"> -->
+                <p class="title">Control Of Soccer Matches Data</p>
+                <div class="description">
+                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
+                    <span style="font-size: large;">Frontend Developer</span>
+                    <hr style="margin: 0 0 16px 0;">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+
+                    </div>
+
+                    <!-- <br>
+                        <br> -->
+
+                    <span class="company">Linkear</span>
+                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
+                    <br>
+                    <span style="margin-right: 20px">Links</span>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/vocalia"><img
+                            class="portfolio-container__image end " src="./assets/images/github.png"
+                            alt="Go to the repository"></a>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/vocalia-api"> <img
+                            class="portfolio-container__image  end" src="./assets/images/navegador.png"
+                            alt="Go to the page"></a>
+                    <p style="margin-top: 10px;margin-bottom: 10px;">Tasks</p>
+                    <p> Develop the frontend using Angular that allows registering data of soccer matches, such as goals
+                        and faults. Build user interfaces
+                    </p>
+                </div>
+                <!-- <button class="gitHubButton"><i class="gitHubButton-icon">icon</i> GitHub</button> -->
+                <!-- <button class="productionButton"><i class="productionButton-icon">icon</i> Production</button> -->
+            </div>
+            <div class="portfolio-container__item">
+                <!-- <img class="portfolio-container__image" src="./assets/images/bolsa-emploe.png"
+                        alt="bolsa-empleo"> -->
+                <p class="title">Uber Clon</p>
+                <div class="description">
+                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
+                    <span style="font-size: large;">Full-stack Developer</span>
+                    <hr style="margin: 0 0 16px 0;">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/png-clipart-laravel-software-framework-php-web-application-redes-sociais-angle-text.png"
+                            alt="">
+                    </div>
+
+                    <!-- <br>
+                        <br> -->
+
+                    <!-- <span class="company">Amauta Tech</span> -->
+                    <!-- <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company"> -->
+                    <br>
+                    <span style="margin-right: 20px">Links</span>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/backend-uberEatsClon"><img
+                            class="portfolio-container__image end " src="./assets/images/github.png"
+                            alt="Go to the repository"></a>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/reactNative-uberEatsClon"><img
+                            class="portfolio-container__image  end" src="./assets/images/navegador.png"
+                            alt="Go to the page"></a>
+                    <p style="margin-top: 10px;margin-bottom: 10px;">Tasks</p>
+                    <p>Develop an UberEats clone using Laravel for the backend, and React Native for the mobile app.
+                        Design database. </p>
+                </div>
+                <!-- <button class="gitHubButton"><i class="gitHubButton-icon">icon</i> GitHub</button> -->
+                <!-- <button class="productionButton"><i class="productionButton-icon">icon</i> Production</button> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <!-- <div class="soft-skill">
+            <h1 style="text-align: center; ">Soft Skills</h1>
+
+            <ul class="soft-skills-list">
+                <li class="soft-skills-list__item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>
+                        Colaborative Teammate
+                    </span>
+                    <br>
+                    <small>
+                        <strong>
+                            Amauta Tech
+                        </strong>
+                    </small>
+                </li>
+                <li class="soft-skills-list__item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>
+                        Self-Learning
+                    </span>
+                    <br>
+                    <small>
+                        <strong>
+                            Amauta Tech
+                        </strong>
+                    </small>
+                </li>
+                <li class="soft-skills-list__item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>
+                        Troubleshooting
+                    </span>
+                    <br>
+                    <small>
+                        <strong>
+                            Amauta Tech
+                        </strong>
+                    </small>
+                </li>
+                <li class="soft-skills-list__item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>
+                        Critical Thinking
+                    </span>
+                    <br>
+                    <small>
+                        <strong>
+                            Amauta Tech
+                        </strong>
+                    </small>
+                </li>
+
+
+            </ul>
+        </div> -->
+
+        <!-- <div class="tech-skill"> -->
+
+        <h1 style="text-align: center; padding-top:5em">Skills</h1>
+
+        <!-- The Modal -->
+        <div id="myModal" #myModal class="modal">
+            <span class="close">X</span>
+            <img class="modal-content" id="modalContent" #modalContent>
+            <div id="caption" #caption></div>
+        </div>
+
+
+
+        <div class="skills-container">
+            <div class="skills__item">
+                <img src="./assets/images/Unofficial_JavaScript_logo_2.svg.png" alt="">
+                <p>Javascript</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/ts-logo-128.png" alt="">
+                <p>Typescript</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/png-clipart-laravel-software-framework-php-web-application-redes-sociais-angle-text.png"
+                    alt="">
+                <p>Laravel</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/png-transparent-node-js-javascript-react-express-js-linux-foundation-mongodb-icons-angle-text-rectangle.png"
+                    alt="">
+                <p>Nodejs</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/nestjs-logo-09342F76C0-seeklogo.com.png" alt="">
+                <p>Nestjs</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+                <p>Angular</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/1200px-React.svg.png" alt="">
+                <p>Reactjs</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/html-5.png" alt="">
+                <p>HTML</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/css-3.png" alt="">
+                <p>CSS</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/Bootstrap-logo.png" alt="">
+                <p>Boostratp</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/sql-server.png" alt="">
+                <p>Database</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/postgre.png" alt="">
+                <p>PostgreSQL</p>
+            </div>
+
+        </div>
+        <!-- </div> -->
+    </section>
+
+    <footer id="footer">
+        <div class="footer__header" style="position: relative; align-self: flex-start; ">
+
+            <img style="position: absolute; margin: 0; padding: 0;" id="email-icon"
+                src="./assets/images/correo-electronico.png" alt="">
+            <h1>Contact</h1>
+            <p style="padding-top:15px ;">Send me an email to get in touch</p>
+
+        </div>
+        <div>
+            <form>
+                <input class="form__item" type="email" placeholder="Write your email" />
+                <textarea class="form__item" name="mensaje" id="mensaje" cols="30" rows="10"
+                    placeholder="Write your message"></textarea>
+                <button class="form__item send">Send</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        const burguer = document.querySelector('#burguer');
+        const links = document.querySelector('#li-list-burger');
+
+        burguer.addEventListener('click', function (e) {
+            links.classList.toggle('collapsed')
+        })
+    </script>
+</body>
+
+</html>
