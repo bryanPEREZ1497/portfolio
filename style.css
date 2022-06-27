@@ -6,9 +6,11 @@ body {
     /* padding: 20px; */
     font-family: 'Poppins', sans-serif;
 }
+
 header {
     overflow: hidden;
 }
+
 nav {
     position: fixed;
     z-index: 1;
@@ -172,9 +174,9 @@ a {
 }
 
 .social-media-links img {
-    max-width: 3%;
+    max-width: 3.5%;
     height: auto;
-    margin: 0 5px;
+    margin: 0 15px;
     cursor: pointer;
 }
 
@@ -453,7 +455,7 @@ form {
     .portfolio-container__item {
         min-width: 50%;
     }
-   
+
     .skills__item {
         /* min-width: 20%; */
         /* min-height: 20%; */
@@ -486,6 +488,13 @@ form {
         align-content: center;
     }
 
+    .social-media-links img {
+        max-width: 10%;
+    }
+
+    .hero img {
+        max-width: 45%;
+    }
 }
 
 @media screen and (max-width:612px) {
@@ -508,6 +517,14 @@ form {
 
     .brand {
         display: none;
+    }
+
+    .social-media-links img {
+        max-width: 10%;
+    }
+
+    .hero img {
+        max-width: 45%;
     }
 
 }
