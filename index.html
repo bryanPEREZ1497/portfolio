@@ -497,11 +497,14 @@
 
         </div>
         <div>
-            <form>
-                <input class="form__item" type="email" placeholder="Write your email" />
-                <textarea class="form__item" name="mensaje" id="mensaje" cols="30" rows="10"
-                    placeholder="Write your message"></textarea>
-                <button class="form__item send">Send</button>
+            <form action="https://formsubmit.co/bapm1997inmsd1b09@gmail.com" method="POST">
+                <input class="form__item" name="subject" type="text" placeholder="Subject" required/>
+                <input class="form__item" name="name" type="text" placeholder="Names" required/>
+                <input class="form__item" name="email" type="email" placeholder="Email" required/>
+                <input class="form__item" type="hidden" name="_next" value="https://bryanperez1497.github.io/portfolio/#header"/>
+                <textarea class="form__item" name="message" id="mensaje" cols="30" rows="10"
+                    placeholder="Write your message" required></textarea>
+                <button class="form__item send" type="submit">Send</button>
             </form>
         </div>
     </footer>
