@@ -426,9 +426,9 @@ form {
     width: 100%;
 }
 
-.form__item:focus {}
 
 .send {
+    text-decoration: none;
     border-radius: 25px;
     color: #feb642;
     border: #feb642 solid;
