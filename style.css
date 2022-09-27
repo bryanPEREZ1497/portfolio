@@ -2,9 +2,13 @@
 
 body {
     background-color: #23272c;
-    color: #e5e1dc;
-    /* padding: 20px; */
+    /* opacity: 1; */
+    background-image: linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #23272c 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
     font-family: 'Poppins', sans-serif;
+    color: #e5e1dc;
 }
 
 header {
@@ -19,7 +23,7 @@ nav {
     bottom: 0px;
     top: 0px;
     height: fit-content;
-    background: #23272ccc;
+    background: #23272cb8;
 }
 
 .material-symbols-outlined.burguer {
@@ -201,47 +205,38 @@ a {
 
 /*Portfolio*/
 
-#portfolio {
-    /* text-align: center; */
-}
-
 .portfolio-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
     flex-wrap: wrap;
-    /* flex:; */
-    /* width: auto; */
-    /* max-width: 100%; */
     height: auto;
+}
+
+.portfolio-container hr {
+    width: 100%;
+    border: 1px solid #feb642;
+    /* margin: 1rem 0; */
 }
 
 
 .portfolio-container__item {
     text-align: center;
     padding: 30px;
-    background: #363e45;
-    max-width: 30%;
+    flex-basis: 33.333333%;
+    /* background: #23272c; */
+    /* width: 30%; */
     transition: all 0.5s ease-out;
-    cursor: pointer;
-    font-size: 12px;
+    /* font-size: 12px; */
+    border: #fdb642 solid 1px;
 }
 
 .portfolio-container__item .description div span,
 .portfolio-container__item .description span {
     vertical-align: top;
 }
-
-.portfolio-container__item:hover {
-    /* color: black;
-    background: #fdb64299; */
-    opacity: 0.7;
-
-}
-
 
 .portfolio-container__image {
     width: 40px;
@@ -265,12 +260,6 @@ a {
 
 .company {
     text-align: left;
-}
-
-.gitHubButton {
-    /* position: absolute;
-    top: 0;
-    right: 0; */
 }
 
 /*Modal*/
@@ -298,21 +287,6 @@ a {
 }
 
 /*skills*/
-#skills {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    flex-wrap: wrap;
-
-    text-align: center;
-    height: auto; */
-    /* padding: 0; */
-    /* margin: 0; */
-    /* text-align: center; */
-}
-
-
 .skills-container {
     margin: 0 auto;
     display: flex;
@@ -329,7 +303,7 @@ a {
 .skills__item {
     text-align: center;
     padding: 30px;
-    background: #363e45;
+    /* background: #23272c; */
     min-width: 100px;
     min-height: 100px;
     transition: 0.3s;
@@ -338,7 +312,8 @@ a {
 
 .skills__item:hover {
     opacity: 0.7;
-
+    background-color: #fdb642;
+    color: white;
 }
 
 .skills__item p {
@@ -419,11 +394,12 @@ form {
 
 .form__item {
     padding: 10px;
-    background: #363e45;
-    border: 1px solid #e5e1dc;
+    background: #23272c;
+    border: 1px solid #23272c;
     border-radius: 4px;
     color: #e5e1dc;
     width: 100%;
+    font-family: 'Poppins';
 }
 
 
@@ -446,22 +422,38 @@ form {
     background-color: rgba(254, 182, 66, 0.379);
 }
 
-@media screen and (max-width:652px) {
+/*About*/
+#about {
+    padding: 8em 8em 0 8em;
+}
 
-    /* .portfolio-container__item .description div span,
-    .portfolio-container__item .description span {
-        display: block;
-    } */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__image img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:652px) {
     .portfolio-container__item {
         min-width: 50%;
     }
-
-    .skills__item {
-        /* min-width: 20%; */
-        /* min-height: 20%; */
-    }
-
-
 }
 
 @media screen and (max-width:494px) {
@@ -527,4 +519,39 @@ form {
         max-width: 45%;
     }
 
+}
+
+@media screen and (max-width:891px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about__image img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.card__header { 
+    display: none;
+}
+
+@media screen and (max-width:493px) {
+    #about {
+        padding: 8em 3em 0 3em;
+    }
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card__header { 
+        display: inline-block;
+    }
+    .about__image img {
+        display: none;
+    }
+    
 }
