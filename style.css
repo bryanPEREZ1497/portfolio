@@ -229,7 +229,7 @@ a {
     /* background: #23272c; */
     /* width: 30%; */
     transition: all 0.5s ease-out;
-    /* font-size: 12px; */
+    font-size: 12px;
     border: #fdb642 solid 1px;
 }
 
@@ -434,6 +434,7 @@ form {
 
 .about__image img {
     max-width: 90%;
+    /* min-width: 90%; */
     height: auto;
     margin: 0 auto;
     padding: 0;
