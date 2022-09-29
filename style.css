@@ -298,17 +298,8 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px 10px;
-    /* margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    height: auto; */
-    /* width: 670px; */
 }
+
 
 .skills__item {
     text-align: center;
@@ -320,9 +311,22 @@ a {
     cursor: pointer;
 }
 
+.skills__item.title {
+    /* grid-area: front; */
+    grid-column-start: 1;
+    grid-column-end: last;
+    /* background-color: #000000; */
+
+}
+
 .skills__item:hover {
     opacity: 0.7;
     background-color: #fdb642;
+    color: white;
+}
+.skills__item.title:hover {
+    opacity: 0.7;
+    background-color: #1045a0;
     color: white;
 }
 
