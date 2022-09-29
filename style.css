@@ -65,6 +65,10 @@ ul li a {
     display: none !important;
 }
 
+.show {
+    display: block;
+}
+
 .li-list li {
     padding: 0 15px;
     color: #e5e1dc;
@@ -233,18 +237,40 @@ a {
     flex-basis: 33.333333%;
     /* background: #23272c; */
     /* width: 30%; */
-    transition: all 0.5s ease-out;
+    transition: all 0.7s ease-out;
     font-size: 12px;
     border: #fdb642 solid 1px;
+    cursor: pointer;
 }
+
+.portfolio-container__item:hover {
+    background: #23272c;
+    /* background-color: #fdb642; */
+    /* color: #feb642; */
+    color: white;
+    /* border: #feb642 solid 1px; */
+    /* transition: all 0.7s ease-out; */
+}
+
+/*i want to show icons when click in .portfolio-container__item*/
 
 .portfolio-container__item .description div span,
 .portfolio-container__item .description span {
     vertical-align: top;
 }
 
+.portfolio-container__item .description {
+    /* display: flex; */
+
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+}
+
 .portfolio-container__image {
-    width: 40px;
+    width: 30px;
     height: auto;
     margin: 10px;
 }
@@ -265,6 +291,39 @@ a {
 
 .company {
     text-align: left;
+}
+
+.repolinks {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    gap: 40px; */
+    margin: auto;
+
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+}
+
+.portfolio-container__image.linkimage {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*Modal*/
@@ -298,16 +357,6 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px 10px;
-    /* margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    height: auto; */
-    /* width: 670px; */
 }
 
 .skills__item {
@@ -316,56 +365,35 @@ a {
     /* background: #23272c; */
     min-width: 100px;
     min-height: 100px;
-    transition: 0.3s;
+    transition: all 0.7s ease-out;
     cursor: pointer;
 }
 
 .skills__item:hover {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     background-color: #fdb642;
     color: white;
+    /* z-index: 1; */
 }
 
-.skills__item p {
+/* .skills__item p {
+    display: none;
     padding-top: 5px;
-}
+} */
+
+/* .skills__item:hover p {
+    display: block;
+    padding-top: 5px;
+} */
+
 
 .skills__item img {
     width: 40px;
+    transition: all 0.7s ease-out;
 }
 
-.soft-skills-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-
-.soft-skills-list__item {
-    padding: 20px;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    min-width: -webkit-fill-available;
-}
-
-.soft-skills-list__item i {
-    background: #e5e1dc;
-    color: #23272c;
-    border-radius: 100%;
-    padding: 1px 5px;
-    font-size: 1.7em;
-}
-
-.soft-skills-list__item span {
-    color: #feb642;
-}
-
-.soft-skills-list__item small {
-    float: right;
+.skills__item img:hover {
+    width: 90px;
 }
 
 #footer {
@@ -376,10 +404,7 @@ a {
     align-items: center;
     text-align: center;
     gap: 50px;
-
     padding-top: 5em;
-
-
 }
 
 #email-icon {
@@ -463,6 +488,12 @@ form {
 
 .card__header {
     display: none;
+}
+
+/* credits */
+#credits {
+    padding: 100px 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @media screen and (max-width:652px) {

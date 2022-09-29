@@ -14,12 +14,12 @@
     <header id="header">
         <nav>
             <ul>
-                <li class="brand">BP</li>
+                <li class="brand"></li>
                 <div class="li-list">
                     <li><a href="#header"> Home</a></li>
                     <li><a href="#about"> About Me</a></li>
-                    <li><a href="#skills"> Skills</a></li>
                     <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#skills"> Skills</a></li>
                     <li><a href="#footer"> Contact</a></li>
                 </div>
                 <span id="burguer" class="material-symbols-outlined burguer">
@@ -28,11 +28,11 @@
                 <div id="li-list-burger" class="li-list-burger collapsed">
                     <li><a href="#header"> Home</a></li>
                     <li><a href="#about"> About Me</a></li>
-                    <li><a href="#skills"> Skills</a></li>
                     <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#skills"> Skills</a></li>
                     <li><a href="#footer"> Contact</a></li>
                 </div>
-                <a class="send" href="./assets/files/CV.pdf" download target="_blank">Hire me</a>
+                <a class="send" href="./assets/files/CV.pdf" download target="_blank">CV</a>
             </ul>
         </nav>
         <div class="hero">
@@ -79,10 +79,14 @@
                     </p> -->
                     <p>
                         Hello. Thanks for your visit. Let me tell you about me. I'm from Ecuador. I have 25 years old.
-                        I'm Software Developer and my passion is coding entire apps, from UI Design and DB Design to the
-                        building front and back. I have a Software Development degree. Other things I like to do is
+                        I'm Software Developer and my passion is coding entire apps, from UI Design and DB Design to
+                        building the frontend and backend. I have a Software Development degree. Other things I like to
+                        do is
                         write and read things like programming, literature, and philosophy, that's why I have a Medium
-                        profile where I have publications. But I also like to do sports like calisthenics, football and
+                        profile where I have publications, and a
+                        <a href="https://cuentosdeparmenides.blogspot.com/2020/07/el-gato.html"
+                            style="text-decoration: none;color:inherit" target="_blank">blog</a>
+                        with fiction stories. But I also like to do sports like calisthenics, football and
                         go to the gym. You can find me on LinkedIn, GitHub, and Medium, and download my Resume by
                         clicking the Hire Me button. If you prefer you can contact me by sending me an email. I can
                         speak with you if you prefer. I hope you enjoy my portfolio.
@@ -106,15 +110,20 @@
             <div id="caption" #caption></div>
         </div>
 
-
-
         <div class="portfolio-container">
             <div class="portfolio-container__item">
-                <p class="title">Course Planification Web App</p>
+                <p class="title">Course Planning Web App</p>
                 <div class="description">
-                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
-                    <span style="font-size: large;">Full-stack Developer</span>
-                    <hr>
+                    <p>
+                        Web app that manages course planning for a college, with CRUD operations, and
+                        authentication, and contains multiple pages like User Administration, multiple roles for
+                        different actions, creation of courses, planning, schedules, instructors, instructor
+                        profiles, data validations in the backend and frontend. Front-end built with Angular, PrimeNg,
+                        Bootstrap and Sweetalert, applying lazy loading and modular architecture. Back-end (REST API)
+                        built with Laravel 8, JWT, Laravel Sanctum and PostgreSQL.
+                    </p>
+                    <span>Full-stack Developer</span>
+                    <img class="portfolio-container__image end" src="./assets/images/programmer.png" alt="">
 
                     <div>
 
@@ -131,78 +140,80 @@
 
                     <span class="company">Amauta Tech</span>
                     <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
-                    <br>
-                    <span style="margin-right: 20px">Links</span>
+                </div>
+                <div class="repolinks" style="display: none;">
                     <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-backend">
-                        <img class="portfolio-container__image end "
+                        <img class="portfolio-container__image linkimage"
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository" title="Go to the repository"></a>
+                    <small style="display: block;">Back</small>
+                    <hr>
                     <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-frontend"><img
-                            class="portfolio-container__image end "
+                            class="portfolio-container__image linkimage"
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository" title="Go to the repository"></a>
-                    <a target="_blank" href="https://bolsa-empleo.yavirac.edu.ec/#/authentication/login"> <img
-                            class="portfolio-container__image  end" src="./assets/images/navegador.png"
-                            alt="Go to the page" title="Go to the page"></a>
-                    <p>
-                        Web app that manages course planification for a college, with CRUD operations, and
-                        authentication, and contains multiple pages like User Administration, multiple roles for
-                        different actions, creation of courses, planification, schedules, instructors, instructor
-                        profiles, data validations in the backend and frontend. Front-end built with Angular, PrimeNg,
-                        Bootstrap and Sweetalert, applying lazy loading and modular architecture. Back-end (REST API)
-                        built with Laravel 8, JWT, Laravel Sanctum and PostgreSQL.
-                    </p>
+                    <small style="display: block;">Front</small>
+
                 </div>
             </div>
             <div class="portfolio-container__item">
                 <p class="title">Job Board Web App</p>
                 <div class="description">
-                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
-                    <span style="font-size: large;">Full-stack Developer</span>
-                    <hr>
-
-                    <div>
-
-                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
-                        <img class="portfolio-container__image end"
-                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
-                        <img class="portfolio-container__image end"
-                            src="./assets/images/png-clipart-laravel-software-framework-php-web-application-redes-sociais-angle-text.png"
-                            alt="">
-                        <img class="portfolio-container__image end" src="./assets/images/postgre.png" alt="">
-                        <img class="portfolio-container__image end" src="./assets/images/SweetAlert2.png" alt=""
-                            title="SweetAlert2">
-                    </div>
-
-                    <span class="company">Amauta Tech</span>
-                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
-                    <br>
-                    <span style="margin-right: 20px">Links</span>
-                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-backend">
-                        <img class="portfolio-container__image end "
-                            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
-                            alt="Go to the repository" title="Go to the repository"></a>
-                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-frontend"><img
-                            class="portfolio-container__image end "
-                            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
-                            alt="Go to the repository" title="Go to the repository"></a>
-                    <a target="_blank" href="https://bolsa-empleo.yavirac.edu.ec/#/authentication/login"> <img
-                            class="portfolio-container__image  end" src="./assets/images/navegador.png"
-                            alt="Go to the page" title="Go to the page"></a>
                     <p>
                         Web app to register students’ jobs and more data related to their experience, company, skills,
                         etc., for a college. Front-end built with Angular, PrimeNg, Bootstrap, and Sweetalert, applying
                         lazy loading and modular architecture. Back-end (REST API) built with Laravel 8, JWT, Laravel
                         Sanctum and PostgreSQL.
                     </p>
+                    <span>Full-stack Developer</span>
+                    <img class="portfolio-container__image end" src="./assets/images/programmer.png" alt="">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/png-clipart-laravel-software-framework-php-web-application-redes-sociais-angle-text.png"
+                            alt="">
+                        <img class="portfolio-container__image end" src="./assets/images/postgre.png" alt="">
+                        <img class="portfolio-container__image end" src="./assets/images/SweetAlert2.png" alt=""
+                            title="SweetAlert2">
+                    </div>
+
+                    <span class="company">Amauta Tech</span>
+                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
+
+                </div>
+                <div class="repolinks" style="display: none;">
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-backend">
+                        <img class="portfolio-container__image linkimage "
+                            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
+                            alt="Go to the repository" title="Go to the repository"></a>
+                    <small style="display: block;">Back</small>
+                    <hr>
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-frontend"><img
+                            class="portfolio-container__image linkimage "
+                            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
+                            alt="Go to the repository" title="Go to the repository"></a>
+                    <small style="display: block;">Front</small>
+                    <hr>
+                    <a target="_blank" href="https://bolsa-empleo.yavirac.edu.ec/#/authentication/login"> <img
+                            class="portfolio-container__image  linkimage" src="./assets/images/navegador.png"
+                            alt="Go to the page" title="Go to the page"></a>
                 </div>
             </div>
             <div class="portfolio-container__item">
                 <p class="title">Glycemias Mobile App</p>
                 <div class="description">
+                    <p>
+                        Mobile app in React Native that allows children and young people with diabetes to
+                        register their blood glucose levels and other information. Admin dashboard for user management.
+                        Calendar where the user can see the glucose levels registered. Building the app with React
+                        Native, React Navigation, React, Context API, React Hooks.
+                    </p>
+                    <span>Mobile Developer</span>
                     <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
-                    <span style="font-size: large;">Mobile Developer</span>
-                    <hr style="margin: 0 0 16px 0;">
 
                     <div>
 
@@ -218,26 +229,27 @@
                     <a href="https://fdje.org/" target="_blank">
                         <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
                     </a>
-                    <br>
-                    <span style="margin-right: 20px">Links</span>
+
+                </div>
+                <div class="repolinks" style="display: none;">
                     <a target="_blank" href="https://github.com/bryanPEREZ1497/glucemias-reactnative"><img
-                            class="portfolio-container__image end "
+                            class="portfolio-container__image linkimage "
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository"></a>
-                    <p>
-                        Mobile app in React Native that allows children and young people with diabetes to
-                        register their blood glucose levels and other information. Admin dashboard for user management.
-                        Calendar where the user can see the glucose levels registered. Building the app with React
-                        Native, React Navigation, React, Context API, React Hooks.
-                    </p>
+                    <small style="display: block;">Mobile app repo</small>
+
                 </div>
             </div>
             <div class="portfolio-container__item">
                 <p class="title">Bank Services Web App</p>
                 <div class="description">
+                    <p>
+                        Web App for payments and bank transfers. Build front-end with Angular, Angular Material for
+                        styled components like cards and tables. Build backend (REST API) with Node.js, Express, JWT,
+                        and PostgreSQL. The design for the database was with PGModeler.
+                    </p>
+                    <span>Full-stack Developer</span>
                     <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
-                    <span style="font-size: large;">Full-stack Developer</span>
-                    <hr style="margin: 0 0 16px 0;">
 
                     <div>
                         <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
@@ -251,28 +263,35 @@
                         <img class="portfolio-container__image end" src="./assets/images/postgre.png" alt="">
                         <img class="portfolio-container__image end" src="./assets/images/express-1.png" alt="">
                     </div>
+                </div>
 
-                    <span style="margin-right: 20px">Links</span>
-                    <a href="https://github.com/bryanPEREZ1497/banca"> <img class="portfolio-container__image end "
+                <div class="repolinks" style="display: none;">
+                    <a href="https://github.com/bryanPEREZ1497/banca"> <img
+                            class="portfolio-container__image linkimage "
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository"></a>
-                    <a href="https://github.com/bryanPEREZ1497/api-banca"> <img class="portfolio-container__image end "
+                    <small style="display: block;">Front</small>
+                    <hr>
+                    <a href="https://github.com/bryanPEREZ1497/api-banca"> <img
+                            class="portfolio-container__image linkimage "
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository"></a>
-                    <p>
-                        Web App for payments and bank transfers. Build front-end with Angular, Angular Material for
-                        styled components like cards and tables. Build backend (REST API) with Node.js, Express, JWT,
-                        and PostgreSQL. The design for the database was with PGModeler.
-                    </p>
+                    <small style="display: block;">Back-end</small>
+
                 </div>
             </div>
             <div class="portfolio-container__item">
                 <p class="title">Solar tracker Web App
                 </p>
                 <div class="description">
+                    <p>
+                        Software that controls a solar tracker using Nodejs with Expressjs and the Johnny-Five library.
+                        Data real-time-emitted from the solar tracker to the Angular front-end. Angular Material for
+                        styled components, services and dependency injection. Solar tracker built with Arduino UNO.
+                    </p>
+                    <span>Full-stack Developer</span>
                     <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
-                    <span style="font-size: large;">Full-stack Developer</span>
-                    <hr style="margin: 0 0 16px 0;">
+                    <!-- <hr style="margin: 0 0 16px 0;"> -->
 
                     <div>
                         <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
@@ -286,29 +305,32 @@
                         <img class="portfolio-container__image end" src="./assets/images/ts-logo-128.png" alt="">
 
                     </div>
-                    <br>
-                    <span style="margin-right: 20px">Links</span>
+                </div>
+                <div class="repolinks" style="display: none;">
                     <a target="_blank" href="https://github.com/bryanPEREZ1497/solarTracker-frontend"><img
-                            class="portfolio-container__image end "
+                            class="portfolio-container__image linkimage "
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository"></a>
+                    <small style="display: block;">Front</small>
+                    <hr>
                     <a target="_blank" href="https://github.com/bryanPEREZ1497/solarTracker-backend"><img
-                            class="portfolio-container__image end "
+                            class="portfolio-container__image linkimage "
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository"></a>
-                    <p>
-                        Software that controls a solar tracker using Nodejs with Expressjs and the Johnny-Five library.
-                        Data real-time-emitted from the solar tracker to the Angular front-end. Angular Material for
-                        styled components, services and dependency injection. Solar tracker built with Arduino UNO.
-                    </p>
+                    <small style="display: block;">Back</small>
+
                 </div>
             </div>
             <div class="portfolio-container__item">
-                <p class="title">Control Of Soccer Matches Data Web App</p>
+                <p class="title">Control Of Football Matches Data Web App</p>
                 <div class="description">
+                    <p>
+                        Web app that allows registering data of football matches, such as goals and faults, using UXPIN
+                        tool for user interface design, HTML and CSS for the appearance, and Angular for the
+                        functionality, with modules, components, lazy loading, rxjs library, and services.
+                    </p>
+                    <span>Frontend Developer</span>
                     <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
-                    <span style="font-size: large;">Frontend Developer</span>
-                    <hr style="margin: 0 0 16px 0;">
 
                     <div>
                         <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
@@ -318,33 +340,31 @@
                         <img class="portfolio-container__image end" src="./assets/images/css-3.png" alt="">
                         <img class="portfolio-container__image end" src="./assets/images/ts-logo-128.png" alt="">
                     </div>
-
-                    <span class="company">Linkear</span>
-                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
-                    <br>
-                    <span style="margin-right: 20px">Links</span>
-                    <a target="_blank" href="https://github.com/bryanPEREZ1497/vocalia"><img
-                            class="portfolio-container__image end "
+                </div>
+                <div class="repolinks" style="display: none;">
+                    <a target="_blank" href="https://github.com/bryanPEREZ1497/vocalia">
+                        <img class="portfolio-container__image linkimage "
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository"></a>
-                    <a target="_blank" href="https://github.com/bryanPEREZ1497/vocalia-api"> <img
-                            class="portfolio-container__image  end"
+                    <small style="display: block;">Front repo</small>
+
+                    <!-- <a target="_blank" href="https://github.com/bryanPEREZ1497/vocalia-api">
+                        <img class="portfolio-container__image  end"
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
-                            alt="Go to the page"></a>
-                    <p>
-                        Web app that allows registering data of soccer matches, such as goals and faults, using UXPIN
-                        tool for user interface design, HTML and CSS for the appearance, and Angular for the
-                        functionality, with modules, components, lazy loading, rxjs library, and services.
-                    </p>
+                            alt="Go to the page"></a> -->
                 </div>
+
             </div>
-            <div class="portfolio-container__item">
+            <div class="portfolio-container__item" name="myitem">
                 <p class="title">Uber Clon Mobile App</p>
                 <div class="description">
-                    <img class="portfolio-container__image" src="./assets/images/programmer.png" alt="">
-                    <span style="font-size: large;">Full-stack Developer</span>
-                    <hr style="margin: 0 0 16px 0;">
-
+                    <p>
+                        UberEats clone built with Laravel for the backend (REST API) and database PostgreSQL, JSON Web
+                        Token for authentication, and React Native for the mobile app, using the Google Maps API, React
+                        Navigation, React, Context API, React Hooks, and styled componentes such as the modals.
+                    </p>
+                    <span>Full-stack Developer</span>
+                    <img class="portfolio-container__image end" src="./assets/images/programmer.png" alt="">
                     <div>
 
                         <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
@@ -356,22 +376,20 @@
                         <img class="portfolio-container__image end" src="./assets/images/ts-logo-128.png" alt="">
 
                     </div>
-
-                    <br>
-                    <span style="margin-right: 20px">Links</span>
+                </div>
+                <div class="repolinks" style="display: none;">
                     <a target="_blank" href="https://github.com/bryanPEREZ1497/backend-uberEatsClon"><img
-                            class="portfolio-container__image end "
+                            class="portfolio-container__image linkimage "
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository" title="Go to the repository"></a>
+                    <small style="display: block;">Back</small>
+                    <hr>
                     <a target="_blank" href="https://github.com/bryanPEREZ1497/reactNative-uberEatsClon"><img
-                            class="portfolio-container__image  end"
+                            class="portfolio-container__image  linkimage"
                             src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
                             alt="Go to the repository" title="Go to the repository"></a>
-                    <p>
-                        UberEats clone built with Laravel for the backend (REST API) and database PostgreSQL, JSON Web
-                        Token for authentication, and React Native for the mobile app, using the Google Maps API, React
-                        Navigation, React, Context API, React Hooks, and styled componentes such as the modals.
-                    </p>
+                    <small style="display: block;">Mobile app repo</small>
+
                 </div>
             </div>
         </div>
@@ -432,7 +450,7 @@
             </div>
             <div class="skills__item">
                 <img src="./assets/images/Bootstrap-logo.png" alt="">
-                <p>Boostrap</p>
+                <p>Bootstrap</p>
             </div>
             <div class="skills__item">
                 <img src="./assets/images/sql-server.png" alt="">
@@ -441,6 +459,10 @@
             <div class="skills__item">
                 <img src="./assets/images/postgre.png" alt="">
                 <p>PostgreSQL</p>
+            </div>
+            <div class="skills__item">
+                <img src="./assets/images/mysql.svg" alt="">
+                <p>MySQL</p>
             </div>
             <div class="skills__item">
                 <img src="./assets/images/git.png" alt="">
@@ -474,6 +496,12 @@
         </div>
     </footer>
 
+    <section id="credits">
+        <p>Designed and developed by Bryan Pérez</p>
+        
+    </section>
+
+
     <script>
         const burguer = document.querySelector('#burguer');
         const links = document.querySelector('#li-list-burger');
@@ -481,6 +509,19 @@
         burguer.addEventListener('click', function (e) {
             links.classList.toggle('collapsed')
         })
+
+        document.addEventListener('click',
+            function (e) {
+                if (e.target.classList.contains('portfolio-container__item')) {
+                    if (e.target.children[1].style.display === 'none') {
+                        e.target.children[1].style.display = 'block';
+                        e.target.children[2].style.display = 'none';
+                    } else {
+                        e.target.children[1].style.display = 'none';
+                        e.target.children[2].style.display = 'block';
+                    }
+                }
+            })
     </script>
 </body>
 
