@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    /* overflow-y: scroll; */
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 1.16, 1, 1);
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+
+
 body {
     background-color: #23272c;
     background-image: linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #23272c 25%);
