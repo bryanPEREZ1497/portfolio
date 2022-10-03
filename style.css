@@ -94,10 +94,32 @@ ul li a {
 .li-list li {
     padding: 0 15px;
     color: #e5e1dc;
+    margin: 0 5px;
 }
 
-.li-list li:hover {
-    font-weight: bold;
+/* For font color animation*/
+.borderbutton {
+    display: inline-block;
+    text-decoration: none;
+    transition: color .4s ease-in;
+}
+
+.borderbutton:hover {
+    color: #fdb642;
+}
+
+/* For border button animation */
+.borderbutton::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #feb642;
+    transition: width .4s ease-in;
+}
+
+.borderbutton:hover::after {
+    width: 100%;
 }
 
 .boton {
@@ -316,13 +338,6 @@ a {
 }
 
 .repolinks {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    text-align: center;
-    gap: 40px; */
     margin: auto;
 
     -webkit-animation: fadeIn 5s;

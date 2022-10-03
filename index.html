@@ -16,11 +16,11 @@
             <ul>
                 <li class="brand"></li>
                 <div class="li-list">
-                    <li><a href="#header"> Home</a></li>
-                    <li><a href="#about"> About Me</a></li>
-                    <li><a href="#portfolio"> Portfolio</a></li>
-                    <li><a href="#skills"> Skills</a></li>
-                    <li><a href="#footer"> Contact</a></li>
+                    <li><a class="borderbutton" href="#header"> Home</a></li>
+                    <li><a class="borderbutton" href="#about"> About Me</a></li>
+                    <li><a class="borderbutton" href="#portfolio"> Portfolio</a></li>
+                    <li><a class="borderbutton" href="#skills"> Skills</a></li>
+                    <li><a class="borderbutton" href="#footer"> Contact</a></li>
                 </div>
                 <span id="burguer" class="material-symbols-outlined burguer">
                     menu
@@ -84,11 +84,11 @@
                         do is
                         write and read things like programming, literature, and philosophy, that's why I have a Medium
                         profile where I have publications, and a
-                        <a href="https://cuentosdeparmenides.blogspot.com/2020/07/el-gato.html"
+                        <a class="borderbutton" href="https://cuentosdeparmenides.blogspot.com/2020/07/el-gato.html"
                             style="text-decoration: none;color:inherit" target="_blank">blog</a>
                         with fiction stories. But I also like to do sports like calisthenics, football and
                         go to the gym. You can find me on LinkedIn, GitHub, and Medium, and download my Resume by
-                        clicking the Hire Me button. If you prefer you can contact me by sending me an email. I can
+                        clicking the CV button. If you prefer you can contact me by sending me an email. I can
                         speak with you if you prefer. I hope you enjoy my portfolio.
                     </p>
                 </div>
@@ -111,51 +111,7 @@
         </div>
 
         <div class="portfolio-container">
-            <div class="portfolio-container__item">
-                <p class="title">Course Planning Web App</p>
-                <div class="description">
-                    <p>
-                        Web app that manages course planning for a college, with CRUD operations, and
-                        authentication, and contains multiple pages like User Administration, multiple roles for
-                        different actions, creation of courses, planning, schedules, instructors, instructor
-                        profiles, data validations in the backend and frontend. Front-end built with Angular, PrimeNg,
-                        Bootstrap and Sweetalert, applying lazy loading and modular architecture. Back-end (REST API)
-                        built with Laravel 8, JWT, Laravel Sanctum and PostgreSQL.
-                    </p>
-                    <span>Full-stack Developer</span>
-                    <img class="portfolio-container__image end" src="./assets/images/programmer.png" alt="">
 
-                    <div>
-
-                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
-                        <img class="portfolio-container__image end"
-                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
-                        <img class="portfolio-container__image end"
-                            src="./assets/images/png-clipart-laravel-software-framework-php-web-application-redes-sociais-angle-text.png"
-                            alt="">
-                        <img class="portfolio-container__image end" src="./assets/images/postgre.png" alt="">
-                        <img class="portfolio-container__image end" src="./assets/images/SweetAlert2.png" alt=""
-                            title="SweetAlert2">
-                    </div>
-
-                    <span class="company">Amauta Tech</span>
-                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
-                </div>
-                <div class="repolinks" style="display: none;">
-                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-backend">
-                        <img class="portfolio-container__image linkimage"
-                            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
-                            alt="Go to the repository" title="Go to the repository"></a>
-                    <small style="display: block;">Back</small>
-                    <hr>
-                    <a target="_blank" href="https://github.com/bryanPEREZ1497/jobboard-frontend"><img
-                            class="portfolio-container__image linkimage"
-                            src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
-                            alt="Go to the repository" title="Go to the repository"></a>
-                    <small style="display: block;">Front</small>
-
-                </div>
-            </div>
             <div class="portfolio-container__item">
                 <p class="title">Job Board Web App</p>
                 <div class="description">
@@ -422,6 +378,42 @@
                     <small style="display: block;">Private repo, sorry!</small>
                 </div>
             </div>
+            <div class="portfolio-container__item">
+                <p class="title">Course Planning Web App</p>
+                <div class="description">
+                    <p>
+                        Web app that manages course planning for a college, with CRUD operations, and
+                        authentication, and contains multiple pages like User Administration, multiple roles for
+                        different actions, creation of courses, planning, schedules, instructors, instructor
+                        profiles, data validations in the backend and frontend. Front-end built with Angular, PrimeNg,
+                        Bootstrap and Sweetalert, applying lazy loading and modular architecture. Back-end (REST API)
+                        built with Laravel 8, JWT, Laravel Sanctum and PostgreSQL.
+                    </p>
+                    <span>Full-stack Developer</span>
+                    <img class="portfolio-container__image end" src="./assets/images/programmer.png" alt="">
+
+                    <div>
+
+                        <span style="margin-top: 10px;margin-bottom: 0;">Tech Stack</span>
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/Angular_full_color_logo.svg.png" alt="">
+                        <img class="portfolio-container__image end"
+                            src="./assets/images/png-clipart-laravel-software-framework-php-web-application-redes-sociais-angle-text.png"
+                            alt="">
+                        <img class="portfolio-container__image end" src="./assets/images/postgre.png" alt="">
+                        <img class="portfolio-container__image end" src="./assets/images/SweetAlert2.png" alt=""
+                            title="SweetAlert2">
+                    </div>
+
+                    <span class="company">Amauta Tech</span>
+                    <img class="portfolio-container__image end" src="./assets/images/company.png" alt="Company">
+                </div>
+                <div class="repolinks" style="display: none;">
+                    <img class="portfolio-container__image  linkimage" src="./assets/images/octocat.png" alt="">
+                    <small style="display: block;">Private repo, sorry!</small>
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -542,15 +534,47 @@
 
         document.addEventListener('click',
             function (e) {
-                if (e.target.classList.contains('portfolio-container__item')) {
+                console.log('className:', e.target.parentElement)
+                if (e.target.classList
+                    .contains('portfolio-container__item')) {
                     if (e.target.children[1].style.display === 'none') {
                         e.target.children[1].style.display = 'block';
                         e.target.children[2].style.display = 'none';
+                        console.log('si')
                     } else {
                         e.target.children[1].style.display = 'none';
                         e.target.children[2].style.display = 'block';
+                        console.log('no')
                     }
+                    return
                 }
+                if (e.target.parentElement.className === 'portfolio-container__item') {
+                    if (e.target.parentElement.children[1].style.display === 'none') {
+                        e.target.parentElement.children[1].style.display = 'block';
+                        e.target.parentElement.children[2].style.display = 'none';
+                        console.log('si')
+                    } else {
+                        e.target.parentElement.children[1].style.display = 'none';
+                        e.target.parentElement.children[2].style.display = 'block';
+                        console.log('no')
+                    }
+                    return
+
+                }
+                if (e.target.parentElement.className === 'description') {
+                    if (e.target.parentElement.parentElement.children[1].style.display === 'none') {
+                        e.target.parentElement.parentElement.children[1].style.display = 'block';
+                        e.target.parentElement.parentElement.children[2].style.display = 'none';
+                        console.log('si')
+                    } else {
+                        e.target.parentElement.parentElement.children[1].style.display = 'none';
+                        e.target.parentElement.parentElement.children[2].style.display = 'block';
+                        console.log('no')
+                    }
+                    return
+
+                }
+
             })
     </script>
 </body>
