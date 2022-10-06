@@ -417,7 +417,6 @@
         </div>
     </section>
 
-
     <section id="skills">
 
         <h1 style="text-align: center; padding-top:5em">Skills</h1>
@@ -534,17 +533,14 @@
 
         document.addEventListener('click',
             function (e) {
-                console.log('className:', e.target.parentElement)
                 if (e.target.classList
                     .contains('portfolio-container__item')) {
                     if (e.target.children[1].style.display === 'none') {
                         e.target.children[1].style.display = 'block';
                         e.target.children[2].style.display = 'none';
-                        console.log('si')
                     } else {
                         e.target.children[1].style.display = 'none';
                         e.target.children[2].style.display = 'block';
-                        console.log('no')
                     }
                     return
                 }
@@ -552,11 +548,9 @@
                     if (e.target.parentElement.children[1].style.display === 'none') {
                         e.target.parentElement.children[1].style.display = 'block';
                         e.target.parentElement.children[2].style.display = 'none';
-                        console.log('si')
                     } else {
                         e.target.parentElement.children[1].style.display = 'none';
                         e.target.parentElement.children[2].style.display = 'block';
-                        console.log('no')
                     }
                     return
 
@@ -565,16 +559,12 @@
                     if (e.target.parentElement.parentElement.children[1].style.display === 'none') {
                         e.target.parentElement.parentElement.children[1].style.display = 'block';
                         e.target.parentElement.parentElement.children[2].style.display = 'none';
-                        console.log('si')
                     } else {
                         e.target.parentElement.parentElement.children[1].style.display = 'none';
                         e.target.parentElement.parentElement.children[2].style.display = 'block';
-                        console.log('no')
                     }
                     return
-
                 }
-
             })
     </script>
 </body>

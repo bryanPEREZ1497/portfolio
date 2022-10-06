@@ -16,11 +16,7 @@ html {
     100% {
         opacity: 1;
     }
-
-
 }
-
-
 
 body {
     background-color: #23272c;
@@ -87,10 +83,6 @@ ul li a {
     display: none !important;
 }
 
-.show {
-    display: block;
-}
-
 .li-list li {
     padding: 0 15px;
     color: #e5e1dc;
@@ -124,7 +116,6 @@ ul li a {
 
 .boton {
     color: #feb642;
-
 }
 
 .boton::before {
@@ -137,7 +128,6 @@ ul li a {
     text-align: center;
     font-size: small;
     font-weight: bold;
-
 }
 
 .brand {
@@ -146,8 +136,6 @@ ul li a {
 
 .hero {
     margin: 4rem 0;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,9 +145,6 @@ ul li a {
 
 
 .card-contenedor {
-    /* position: relative; */
-
-
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -176,8 +161,6 @@ ul li a {
     padding: 20px;
     cursor: pointer;
     /* position: absolute; */
-
-
     display: flex;
     justify-content: space-around;
     align-items: center;
