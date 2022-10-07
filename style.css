@@ -154,13 +154,10 @@ ul li a {
 }
 
 .card {
-    /* width: 100%; */
-    /* min-width: 155px; */
     background: #363e45;
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
-    /* position: absolute; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -168,8 +165,6 @@ ul li a {
     flex-wrap: wrap;
     text-align: center;
     gap: 40px;
-
-
 }
 
 .card h3 {
@@ -177,7 +172,6 @@ ul li a {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-
 }
 
 .card span {
@@ -200,12 +194,9 @@ a {
 }
 
 #hand {
-    /* color: #feb642; */
-    /* margin-left: 0.5rem; */
     max-width: 5%;
     height: auto;
     margin: 0 0;
-
 }
 
 .social-media-links img {
@@ -215,46 +206,26 @@ a {
     cursor: pointer;
 }
 
-/* .icon-contenedor li { */
-/* padding: 0px;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background: #e5e1dc; */
-
-/* } */
-
 .icon-contenedor i {
     background: #e5e1dc;
     color: #23272c;
     border-radius: 100%;
     padding: 15px 20px;
     font-size: 1.7em;
-    /*1em equal to original size, 1.5 is equal more less original size más the middle*/
-
 }
 
 /*Portfolio*/
-
 #portfolio {}
 
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
     gap: 10px 10px;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: auto; */
 }
 
 .portfolio-container hr {
     width: 100%;
     border: 1px solid #feb642;
-    /* margin: 1rem 0; */
 }
 
 
@@ -262,8 +233,6 @@ a {
     text-align: center;
     padding: 30px;
     flex-basis: 33.333333%;
-    /* background: #23272c; */
-    /* width: 30%; */
     transition: all 0.7s ease-out;
     font-size: 12px;
     border: #fdb642 solid 1px;
@@ -272,14 +241,8 @@ a {
 
 .portfolio-container__item:hover {
     background: #23272c;
-    /* background-color: #fdb642; */
-    /* color: #feb642; */
     color: white;
-    /* border: #feb642 solid 1px; */
-    /* transition: all 0.7s ease-out; */
 }
-
-/*i want to show icons when click in .portfolio-container__item*/
 
 .portfolio-container__item .description div span,
 .portfolio-container__item .description span {
@@ -287,8 +250,6 @@ a {
 }
 
 .portfolio-container__item .description {
-    /* display: flex; */
-
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
@@ -322,7 +283,6 @@ a {
 
 .repolinks {
     margin: auto;
-
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
@@ -424,7 +384,7 @@ a {
     align-items: center;
     text-align: center;
     gap: 50px;
-    padding-top: 5em;
+    padding-top: 14em;
 }
 
 #email-icon {
@@ -479,7 +439,7 @@ form {
 
 /*About*/
 #about {
-    padding-top: 8em;
+    padding-top: 14em;
     /* margin: 8em; */
 }
 
@@ -514,8 +474,37 @@ form {
 
 /* credits */
 #credits {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits {
+    color: red;
+    vertical-align: middle;
+    padding: auto 8px;
+}
+
+.material-symbols-outlined {
+    transition: color .4s ease-in;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+.material-symbols-outlined.red:hover {
+    /* font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48; */
+        color: red;
 }
 
 @media screen and (max-width:652px) {
