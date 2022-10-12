@@ -337,6 +337,13 @@ a {
 /*skills*/
 #skills {}
 
+.skills__item.title {
+    /* grid-area: front; */
+    grid-column-start: 1;
+    grid-column-end: last;
+
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
