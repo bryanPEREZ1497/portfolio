@@ -350,8 +350,7 @@ a {
     gap: 10px 10px;
 }
 
-
-.skills__item {
+.skills__item{
     text-align: center;
     padding: 30px;
     /* background: #23272c; */
@@ -387,8 +386,17 @@ a {
     transition: all 0.7s ease-out;
 }
 
+.skills__item.mongo img {
+    width: 20px;
+    transition: all 0.7s ease-out;
+}
+
 .skills__item img:hover {
     width: 90px;
+}
+
+.skills__item.mongo img:hover {
+    width: 40px;
 }
 
 #footer {
